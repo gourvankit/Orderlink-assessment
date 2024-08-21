@@ -1,0 +1,38 @@
+.columnContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.column {
+  padding: 8px;
+  margin: 4px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  cursor: move;
+}
+.table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table tr {
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.table tr:hover {
+  background-color: rgba(173, 216, 230, 0.6);
+}
+.table th {
+  font-weight: 800;
+  font-size: 22px;
+  background-color: #adadad;
+}
+.table td {
+  font-weight: 200;
+  font-size: 18px;
+}

@@ -1,0 +1,101 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tableContainer {
+  margin-top: 5%;
+}
+.table th {
+  cursor: pointer;
+}
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+.author span {
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.table th {
+  font-weight: 800;
+  font-size: 22px;
+  background-color: #adadad;
+}
+.table td {
+  font-weight: 200;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.table td:hover {
+  background-color: rgba(173, 216, 230, 0.6);
+}
+.filterInput {
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+.columnVisibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.filterInput:focus {
+  outline: none;
+}
+.inputContainer p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.inputContainer,
+.columnVisibility {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.drag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.drag Button {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .tableContainer {
+    margin-top: 15%;
+  }
+}
+
+/* Tablet devices (screen width between 600px and 992px) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .tableContainer {
+    margin-top: 10%;
+  }
+}
+
+/* Desktop devices (screen width greater than 992px) */
+@media only screen and (min-width: 992px) {
+  .tableContainer {
+    margin-top: 8%;
+  }
+}

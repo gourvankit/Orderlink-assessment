@@ -1,0 +1,41 @@
+.navmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 30px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.avtar {
+  margin-right: 50px;
+}
+.navheading {
+  font-size: 42px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 50;
+}
+.navpointsdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.navpoints {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(19, 213, 19);
+  border: 2px solid white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 15px;
+}
